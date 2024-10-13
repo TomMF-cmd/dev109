@@ -1,4 +1,51 @@
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="name-of-your-css-file.css">
-</head>
+body {
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    background-color: #f0f0f0;
+}
+#title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    padding: 5px;
+}
+#container {
+    margin-top: 70px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 480px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.row {
+    display: flex; 
+}
+.white {
+    border: 1px solid black;
+    width: 60px; 
+    height: 60px; 
+    background-color: white;
+}
+.black {
+    border: 1px solid black;
+    width: 60px; 
+    height: 60px; 
+    background-color: #787878;
+}
+img {
+    width: 80%; 
+    height: 80%; 
+    margin: auto; 
+    display: block; 
+}
+#footer {
+    text-align: center;
+    margin: 20px 0;
+}
+#footer img {
+    width: 90px; 
+    height: auto; 
+}
