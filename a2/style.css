@@ -21,9 +21,10 @@ body {
 }
 #container {
     margin-top: 20%; 
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-bottom: 15%;
+    margin-right: 15%;
+
 }
 .row {
     display: flex; 
@@ -31,13 +32,13 @@ body {
 }
 .white {
     border: 1px solid black;
-    width: 10%;
+    width: 12.5%;
     height: 60px;
     background-color: white;
 }
 .black {
     border: 1px solid black;
-    width: 10%;
+    width: 12.5%;
     height: 60px;
     background-color: #787878;
 }
