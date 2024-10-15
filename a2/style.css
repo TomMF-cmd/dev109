@@ -6,10 +6,11 @@ body {
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
+    background-image:url("https://media.istockphoto.com/id/1366781797/photo/wood-texture-high-resolution-natural-woodgrain-texture.jpg?s=612x612&w=0&k=20&c=BLPo7Vj2n1gcnYWL4lDNO7sMRH1Q8ubCBtGIQ6lmN9E=");
 }
 #title {
     position:fixed;
-    top:0px;
+    top:-23px;
     left:0px; 
     padding:10px;
     margin:px;
