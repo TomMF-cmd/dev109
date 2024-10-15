@@ -34,18 +34,19 @@ body {
  width: 20%;
  height: 60px;
  background-color:white;
- float:left;
+ float:middle;
 }
 .black{
  border: 1px solid black;
  width: 20%;
  height: 60px;
  background-color:#787878;
- float:left;
+ float:middle;
 }
 img {
     margin-left: 5px;
     margin-top: 10px;
+    margin-right: 5px;
 }
 #footer {
     border: solid 1px;
