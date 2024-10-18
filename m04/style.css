@@ -1,1 +1,63 @@
 
+		    #header, body{
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;
+				text-align: center;
+                background-size: cover;    
+                background-position: center;  
+                background-repeat: no-repeat; 
+                background-image: url('https://imgs.search.brave.com/7k2o6HaDT9F4KJS3Oakf0rcFsXWqjxCvqCyFkeXdkbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTEz/ODMyOTcwMy9waG90/by9zcHJpbmctYmxv/c3NvbS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9cEhVVTRU/Y3RHNXByaGYwb0FF/X3FpTUZhcFZTTHN3/QjZjazB3bkdMYkR1/OD0');
+          }
+			#header {
+				font-family: "Dancing Script", cursive;
+          }        
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+          .column1{
+            width: 31.3%;
+            float: left;
+            margin: 1%;
+            background-color: #fcf5c7;
+            height: 10em;
+				margin-bottom: 1em;
+          } 
+          .column2{
+            width: 31.3%;
+			float: left;
+            margin: 1%;
+            background-color: #ffc09f;
+            height: 10em;
+				margin-bottom: 1em;
+          } 
+          .column3{
+			width: 31.3%;
+			float: left;
+			margin-right: 0%;
+            margin: 1%;
+            background-color: #ffee93;
+            height: 10em;
+				margin-bottom: 1em;
+          }
+			li {
+				display: inline;
+				padding: 0.5em;
+          }
+			#nav, #footer {
+				background-color: #e8dff5;
+				padding: 0.5em 0;
+          }
+            #footer{
+            background-color: #fcf4dd;
+            }
+			#feature{
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: #fce1e4;
+                background-image: url("https://imgs.search.brave.com/oXPx1BhLNkZOoe1SB9hsUwGR6Taj20MsDPYg23l_3QI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vaW1hZ2Uv/cHJldmlld3MvMmVk/L3Jlc3BsZW5kZW50/LXBldGFscy1ibG9z/c29tLXBuZy01Njkz/NjYxLnBuZz9mbXQ");
+                background-size:contain;
+                background-position: right;
+                background-repeat:no-repeat;}
+          }
+		</style>
