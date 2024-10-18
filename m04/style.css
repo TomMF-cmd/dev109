@@ -14,52 +14,55 @@
                 background-image: url('https://imgs.search.brave.com/m2J2QSnP8LfAj2yxn2unUILlDVjAP-rrq8CPlJ0Pedc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS81NS8y/OC9paFFnQlguanBn');
             }
 			#content {
-				overflow: auto;}
+				overflow: auto;
+			}
 			#nav, #feature, #footer {
-				margin: 1%;}
+				margin: 1%;
+			}
           .column1{
             width: 31.3%;
             float: left;
             margin: 1%;
             background-color: #fcf5c7;
             height: 10em;
-				margin-bottom: 1em;
+	    margin-bottom: 1em;
           } 
-          .column2{
+          .column2
+	{
             width: 31.3%;
-			float: left;
+	    float: left;
             margin: 1%;
             background-color: #ffc09f;
             height: 10em;
-				margin-bottom: 1em;
+	    margin-bottom: 1em;
           } 
           .column3{
-			width: 31.3%;
-			float: left;
-			margin-right: 0%;
-            margin: 1%;
-            background-color: #ffee93;
-            height: 10em;
-				margin-bottom: 1em;
+		width: 31.3%;
+		float: left;
+		margin-right: 0%;
+                margin: 1%;
+                background-color: #ffee93;
+                height: 10em;
+		margin-bottom: 1em;
           }
-			li {
-				display: inline;
-				padding: 0.5em;
+	   li {
+		display: inline;
+		padding: 0.5em;
           }
-			#nav, #footer {
-				background-color: #e8dff5;
-				padding: 0.5em 0;
+	#nav, #footer {
+		background-color: #e8dff5;
+		padding: 0.5em 0;
           }
             #footer{
             background-color: #fcf4dd;
             }
-			#feature{
-				height: 10em;
-				margin-bottom: 1em;
-				background-color: #fce1e4;
-                background-image: url("https://imgs.search.brave.com/oXPx1BhLNkZOoe1SB9hsUwGR6Taj20MsDPYg23l_3QI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vaW1hZ2Uv/cHJldmlld3MvMmVk/L3Jlc3BsZW5kZW50/LXBldGFscy1ibG9z/c29tLXBuZy01Njkz/NjYxLnBuZz9mbXQ");
-                background-size:contain;
-                background-position: right;
-                background-repeat:no-repeat;}
+	    #feature{
+			height: 10em;
+			margin-bottom: 1em;
+			background-color: #fce1e4;
+                	background-image: url("https://imgs.search.brave.com/oXPx1BhLNkZOoe1SB9hsUwGR6Taj20MsDPYg23l_3QI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vaW1hZ2Uv/cHJldmlld3MvMmVk/L3Jlc3BsZW5kZW50/LXBldGFscy1ibG9z/c29tLXBuZy01Njkz/NjYxLnBuZz9mbXQ");
+                	background-size:contain;
+               		 background-position: right;
+                	background-repeat:no-repeat;
           }
-		</style>
+		
