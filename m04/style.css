@@ -3,14 +3,16 @@
 				font-family: Arial, Verdana, sans-serif;
 				color: #665544;
 				text-align: center;
-                background-position: center;  
-                background-repeat: no-repeat; 
-                background-size: 850px;
-                background-image: url('https://imgs.search.brave.com/m2J2QSnP8LfAj2yxn2unUILlDVjAP-rrq8CPlJ0Pedc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS81NS8y/OC9paFFnQlguanBn');
           }
 			#header {
 				font-family: "Dancing Script", cursive;
-          }        
+          }
+            body{
+                background-position: center;  
+                background-repeat: no-repeat; 
+                background-size: cover;
+                background-image: url('https://imgs.search.brave.com/m2J2QSnP8LfAj2yxn2unUILlDVjAP-rrq8CPlJ0Pedc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS81NS8y/OC9paFFnQlguanBn');
+            }
 			#content {
 				overflow: auto;}
 			#nav, #feature, #footer {
