@@ -10,7 +10,7 @@ if (table !== null && table >= 0 && table <= 10) {
 
   // Uses a for statment to create the table 
   for (let i = 1; i <= 10; i++) {
-    msg += `${i} x ${table} = ${i * table}<br>`;
+  msg += i + ' x ' + table + ' = ' + (i * table) + '<br>';
   }
 }
 
