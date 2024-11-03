@@ -92,7 +92,11 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 #menu ul li a { color: #12c; text-decoration: none; border-bottom: 1px dotted #12c; }
 #menu ul li a:hover { color: #c12; border-bottom: 1px dotted #c12; }
 
-#content { float: middle;}
+#content{
+  text-align: center;
+  margin: 20px auto; /* Adjusts spacing around the text */
+  max-width: 700px;   /* Optional: limits width for readability */
+}
 
 
 #footer { 
