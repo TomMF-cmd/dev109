@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Object Constructor</title>
-    <link rel="stylesheet" href="css/c03.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>TravelWorthy</h1>
