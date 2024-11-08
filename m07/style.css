@@ -128,3 +128,18 @@ p + h2 {
 
 .data {
   padding: 10px;}
+
+
+#top-link {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#top-link a {
+  text-decoration: none;
+  color: #1e1b1e; 
+  font-weight: bold;
+}
