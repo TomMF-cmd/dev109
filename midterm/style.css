@@ -119,7 +119,13 @@ border-top: 1px solid #1f1f1f;
 .right { float: right; }
 .clear { clear: both; }
 
- .column {
-      flex: 1; /* Each column takes up equal space */
+.column {
+      flex: 1;
       padding: 20px;
-      b
+      border: 1px solid #ccc;
+    }
+
+  .container {
+  display: flex;
+  width: 100%;
+}
