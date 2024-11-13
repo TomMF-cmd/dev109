@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" type="text/css" href="style2.css" />
-  <title>Contact</title>
-</head>
-<body>
   
-<!-- Creates the CSS container for the whole survey/contact thing -->
-<!-- Sends the user to the thank you page at the end -->
-
-<div class="container">
- <form action="thankyou.html" method="get">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email.." required>
-  <br>
-
-   <label for="comment">Comment</label>
-    <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px" required></textarea>
-
-    <input type="submit" value="Submit">
-
-
-  </form>
-</div>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <title>
+      Contact
+    </title>
+  </head>
+  
+  <body>
+    <!-- Creates the CSS container for the whole survey/contact thing -->
+    <!-- Sends the user to the thank you page at the end -->
+    <div class="container">
+      <form action="thankyou.html" method="get">
+        <label for="fname">
+          First Name
+        </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">
+          Last Name
+        </label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">
+          Email
+        </label>
+        <input type="email" id="email" name="email" placeholder="Your email.."
+        required>
+        <br>
+        <label for="comment">
+          Comment
+        </label>
+        <textarea id="comment" name="comment" placeholder="Write something.."
+        style="height:200px" required>
+        </textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </body>
+
 </html>
