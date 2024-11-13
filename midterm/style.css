@@ -119,8 +119,11 @@ border-top: 1px solid #1f1f1f;
 .right { float: right; }
 .clear { clear: both; }
 
-.column {
+ .column {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
       padding: 20px;
       border: 1px solid #ccc;
     }
@@ -129,3 +132,10 @@ border-top: 1px solid #1f1f1f;
   display: flex;
   width: 100%;
 }
+
+ .bc-logo {
+      display: block;
+      margin: 0 auto; 
+      width: 100px;
+      height: auto;
+    }
