@@ -119,4 +119,19 @@ border-top: 1px solid #1f1f1f;
 .right { float: right; }
 .clear { clear: both; }
 
+#columns {
+   display: flex;
+   gap: 20px; /* Adds space between columns */
+   justify-content: space-between;
+}
+
+.column {
+   width: 48%; /* Adjusts column width to fit nicely */
+}
+
+.column img.page-image {
+   width: 100%; /* Makes images responsive to fit column width */
+   height: auto; /* Maintains aspect ratio */
+   max-width: 150px; /* Optional: limits image size for consistency */
+}
 
