@@ -121,17 +121,17 @@ border-top: 1px solid #1f1f1f;
 
 #columns {
    display: flex;
-   gap: 20px; /* Adds space between columns */
+   gap: 20px; 
    justify-content: space-between;
 }
 
 .column {
-   width: 48%; /* Adjusts column width to fit nicely */
+   width: 48%;
 }
 
 .column img.page-image {
-   width: 100%; /* Makes images responsive to fit column width */
-   height: auto; /* Maintains aspect ratio */
-   max-width: 150px; /* Optional: limits image size for consistency */
+   width: 100%; 
+   height: auto; 
+   max-width: 150px; 
 }
 
