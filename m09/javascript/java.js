@@ -13,7 +13,7 @@ event.stopPropagation();
   });
 
  addEventListener("click", function(event) {
-   if (event.target.tagName === "BUTTON" || event.target.tagName === "INPUT") {
+   if (event.target.tagName === "INPUT") {
         return;
     }
     var size = document.querySelector("#sizePick").value;
