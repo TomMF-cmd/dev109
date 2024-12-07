@@ -1,135 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Contact Us</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<h1>Contact Us</h1>
-    <form action="thankyou.html" onsubmit="return validateForm();">
-  <div>
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" name="firstname">
-    <div id="firstnameError" class="error"></div>
-  </div>
-  <div>
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname">
-    <div id="lastnameError" class="error"></div>
-  </div>
-  <div>
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address">
-    <span id="addressError" class="error"></span>
-  </div>
-  <div>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    <div id="emailError" class="error"></div>
-  </div>
-  <div>
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone">
-    <div id="phoneError" class="error"></div>
-  </div>
-  <div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-    <div id="usernameError" class="error"></div>
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    <div id="passwordError" class="error"></div>
-  </div>
-  <div>
-        <!-- Country dropdown -->
-    <label for="country">Country:</label>
-    <select id="country" name="country">
-      <option value="">Select your country</option>
-      <option value="USA">United States</option>
-      <option value="CA">Canada</option>
-      <option value="FR">France</option>
-      <option value="UK">United Kingdom</option>
-      <option value="AU">Australia</option>
-      <option value="UA">Ukraine</option>
-      <option value="PT">Portugal</option>
-      <option value="VA">Vatican City</option>
-      <option value="BE">Belgium</option>
-      <option value="RUS">Russia</option>
-    </select>
-    <span id="countryError" class="error"></span>
-  </div>
-    <!-- State dropdown -->
-    <div id="stateDrop" style="display: none;">
+  </head>
+  <body>
+    <form id="userForm" onsubmit="return validateForm()">
+      <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname">
+        <span id="firstnameError" class="error"></span>
+      </div>
+      <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+        <span id="lastnameError" class="error"></span>
+      </div>
+      <div>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+        <span id="addressError" class="error"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span>
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <span id="phoneError" class="error"></span>
+      </div>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" class="error"></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">Select your country</option>
+          <option value="USA">United States</option>
+          <option value="CA">Canada</option>
+          <option value="FR">France</option>
+          <option value="UK">United Kingdom</option>
+          <option value="AU">Australia</option>
+          <option value="UA">Ukraine</option>
+          <option value="PT">Portugal</option>
+          <option value="VA">Vatican City</option>
+          <option value="BE">Belgium</option>
+          <option value="RUS">Russia</option>
+        </select>
+        <span id="countryError" class="error"></span>
+      </div>
+      <div id="stateDrop" style="display: none;">
         <label for="state">State:</label>
         <select id="state" name="state">
-            <option value="">Select a state</option>
-            <option value="California">California</option>
-            <option value="Texas">Texas</option>
-            <option value="Florida">Florida</option>
-            <option value="Indiana">Indiana</option>
-            <option value="Alaska">Alaska</option>
-            <option value="Hawaii">Hawaii</option>
-            <option value="Pennslyvania">Pennslyvania</option>
-            <option value="Ohio">Ohio</option>
-            <option value="Arizona">Arizona</option>
-            <option value="Virginia">Virginia</option>
-            <option value="Massachusetts">Massachusetts</option>
-            <option value="Georgia">Georgia</option>
-            <option value="North Carolina">North Carolina</option>
-            <option value="Michigan">Michigan</option>
-            <option value="Colorado">Colorado</option>
-            <option value="New Jersey">New Jersey</option>
-            <option value="Washington">Washington</option>
-            <option value="Maryland">Maryland</option>
-            <option value="Illinois">Illinois</option>
-            <option value="Alabama">Alabama</option>
-            <option value="Minnisota">Minnisota</option>
-            <option value="Oregon">Oregon</option>
-            <option value="Utah">Utah</option>
-            <option value="Tennessee">Tennessee</option>
-            <option value="Missouri">Missouri</option>
-            <option value="Nevada">Nevada</option>
-            <option value="Louisiana">Lousiana</option>
-            <option value="Conneticut">Conneticut</option>
-            <option value="New York">New York</option>
-            <option value="Maine">Maine </option>
-            <option value="Wisconsin">Wisconsin</option>
-            <option value="Iowa">Iowa</option>
-            <option value="Mississippi">Mississippi</option>
-            <option value="Montana">Montana</option>
-            <option value="Kentucky">Kentucky</option>
-            <option value="South Carolina">South Carolina</option>
-            <option value="New Mexico">New Mexico</option>
-            <option value="Wyoming">Wyoming</option>
-            <option value="Rhoad Island">Rhoad Island</option>
-            <option value="Oklahoma">Oklahoma</option>
-            <option value="Delaware">Delaware</option>
-            <option value="Idaho">Idaho</option>
-            <option value="Vermont">Vermont</option>
-            <option value="Nebraska">Nebraska</option>
-            <option value="Kansas">Kansas</option>
-            <option value="Arkansas">Arkansas</option>
-            <option value="New Hampshire">New Hampshire</option>
-            <option value="South Dakota">South Dakota</option>
-            <option value="North Dakota">North Dakota</option>
-            <option value="West Virginina">West Virginia</option>
+          <option value="">Select a state</option>
+          <option value="California">California</option>
+          <option value="Texas">Texas</option>
+          <option value="Florida">Florida</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Pennslyvania">Pennslyvania</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Massachusetts">Massachusetts</option>
+          <option value="Georgia">Georgia</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Colorado">Colorado</option>
+          <option value="New Jersey">New Jersey</option>
+          <option value="Washington">Washington</option>
+          <option value="Maryland">Maryland</option>
+          <option value="Illinois">Illinois</option>
+          <option value="Alabama">Alabama</option>
+          <option value="Minnisota">Minnisota</option>
+          <option value="Oregon">Oregon</option>
+          <option value="Utah">Utah</option>
+          <option value="Tennessee">Tennessee</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Nevada">Nevada</option>
+          <option value="Louisiana">Lousiana</option>
+          <option value="Conneticut">Conneticut</option>
+          <option value="New York">New York</option>
+          <option value="Maine">Maine </option>
+          <option value="Wisconsin">Wisconsin</option>
+          <option value="Iowa">Iowa</option>
+          <option value="Mississippi">Mississippi</option>
+          <option value="Montana">Montana</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="Wyoming">Wyoming</option>
+          <option value="Rhoad Island">Rhoad Island</option>
+          <option value="Oklahoma">Oklahoma</option>
+          <option value="Delaware">Delaware</option>
+          <option value="Idaho">Idaho</option>
+          <option value="Vermont">Vermont</option>
+          <option value="Nebraska">Nebraska</option>
+          <option value="Kansas">Kansas</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="New Hampshire">New Hampshire</option>
+          <option value="South Dakota">South Dakota</option>
+          <option value="North Dakota">North Dakota</option>
+          <option value="West Virginina">West Virginia</option>
         </select>
-        <div id="stateError" class="error"></div>
-    </div>
-  <div id="zipContainer" style="display: none;">
-      <label for="zipcode">Zip Code:</label>
-      <input type="text" id="zipcode" name="zipcode">
-      <span id="zipcodeError" class="error"></span>
-        </div>
-  <div>
-    <button type="submit">Submit</button>
-  </div>
-</form>
-<script src="javascript/java.js"></script>
-</body>
+      </div>
+      <div id="zipContainer" style="display: none;">
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode">
+        <span id="zipcodeError" class="error"></span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script></script>
+  </body>
 </html>
-
