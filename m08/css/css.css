@@ -36,14 +36,14 @@ h2 span {
 	border-radius: 50%;
 	background-color: #000;
 	font-size: 10px;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  top: -5px;
-  height: 18px;
-  width: 20px;
-  margin-left: 5px;
-  padding: 4px 0 0 4px;}
+	  text-align: center;
+  	display: inline-block;
+  	position: relative;
+  	top: -5px;
+  	height: 18px;
+  	width: 20px;
+  	margin-left: 5px;
+  	padding: 4px 0 0 4px;}
 
 ul {
 	background-color: #584f4d;
@@ -81,7 +81,7 @@ li {
 .complete {
   background-color: #999;
 	color: #fff;
-	background-image: url("../images/icon-trash.png");
+	background-image: url("/images/icon-trash.png");
 	background-position: center, right;
 	background-repeat: no-repeat;
 	border-top: 1px solid #666;
@@ -90,10 +90,10 @@ li {
 li a {
 	color: #fff;
 	text-decoration: none;
-	background-image: url("../images/icon-link.png");
+	background-image: url("/images/icon-link.png");
 	background-position: center, right;
 	background-repeat: no-repeat;
-    padding-right: 36px;}
+    	padding-right: 36px;}
 
 p {
 	color: #403c3b; 
@@ -141,6 +141,15 @@ p {
         background-image: url(../img/2xkinglogo.png);
         background-size: 72px 72px;
     }
+}
+#inputContainer {
+  text-align: center; 
+  margin-top: 20px;  
+}
+
+#items, #btnAddElement {
+  display: inline-block; 
+  margin: 5px;
 }
 
 
