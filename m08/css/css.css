@@ -143,23 +143,4 @@ p {
     }
 }
 
-#items {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 80%;
-  max-width: 300px;
-}
-
-#btnAddElement {
-  display: block;
-  margin: 10px auto;
-  padding: 10px 20px;
-  background-color: #ec8b68;
-  color: white;
-  border: none;
-  width: 80%;
-  max-width: 300px;
-  text-transform: uppercase;
-}
 
