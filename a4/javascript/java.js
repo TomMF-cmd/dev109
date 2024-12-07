@@ -10,7 +10,6 @@ function validateForm() {
     if (firstname === "null" || firstname.length > 20 || /\d/.test(firstname)) {
         document.getElementById("firstnameError").textContent =
             "First name must be alphabetic and not exceed 20 characters.";
-        document.getElementById("firstname").style.border = "2px solid red";
         valid = false;
     }
 
@@ -19,7 +18,6 @@ function validateForm() {
     if (lastname === "" || lastname.length > 50 || /\d/.test(lastname)) {
         document.getElementById("lastnameError").textContent =
             "Last name must be alphabetic and not exceed 50 characters.";
-        document.getElementById("lastname").style.border = "2px solid red";
         valid = false;
     }
 
@@ -58,32 +56,34 @@ function validateForm() {
 
     // Country and Zip Code
     const country = document.getElementById("country").value;
+    const zipcode = document.getElementById("zipcode").value.trim();
     if (country === "") {
         document.getElementById("countryError").textContent = "Please select a country.";
+        document.getElementById("country").style.border = "2px solid red";
         valid = false;
     } else if (country === "USA") {
-        const zipcode = document.getElementById("zipcode").value.trim();
-        if (zipcode.length !== 5 || isNaN(zipcode) || zipcode === "") {
+        if (zipcode.length !== 5 || isNaN(zipcode)) {
             document.getElementById("zipcodeError").textContent = "Zip Code must be 5 digits.";
+            document.getElementById("zipcode").style.border = "2px solid red";
             valid = false;
         }
-    } else {
-        document.getElementById("stateDrop").style.display = "none";
-        document.getElementById("zipContainer").style.display = "none";
+    } else if (zipcode === "") {
+        document.getElementById("zipcodeError").textContent = "Please enter a valid zip/postal code.";
+        document.getElementById("zipcode").style.border = "2px solid red";
+        valid = false;
     }
 
     return valid;
-}
 
-document.getElementById("country").addEventListener("change", function() {
-    const stateDrop = document.getElementById("stateDrop");
-    const zipContainer = document.getElementById("zipContainer");
+    document.getElementById("country").addEventListener("change", function() {
+        const stateDrop = document.getElementById("stateDrop");
+        const zipContainer = document.getElementById("zipContainer");
 
-    if (this.value === "USA") {
-        stateDrop.style.display = "block";
-        zipContainer.style.display = "block";
-    } else {
-        stateDrop.style.display = "none";
-        zipContainer.style.display = "none";
-    }
-});
+        if (this.value === "USA") {
+            stateDrop.style.display = "block";
+            zipContainer.style.display = "block";
+        } else {
+            stateDrop.style.display = "none";
+            zipContainer.style.display = "block";
+        }
+    });
