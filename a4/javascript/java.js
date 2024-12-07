@@ -3,20 +3,23 @@ function validateForm() {
 
     // To clear all error messages
     document.querySelectorAll(".error").forEach(el => el.textContent = "");
+    document.querySelectorAll("input, select").forEach(el => el.style.border = "");
 
     // First Name
     const firstname = document.getElementById("firstname").value.trim();
-    if (firstname === "null" || firstname.length > 20) {
+    if (firstname === "null" || firstname.length > 20 || /\d/.test(firstname)) {
         document.getElementById("firstnameError").textContent =
             "First name must be alphabetic and not exceed 20 characters.";
+        document.getElementById("firstname").style.border = "2px solid red";
         valid = false;
     }
 
     // Last Name
     const lastname = document.getElementById("lastname").value.trim();
-    if (lastname === "" || lastname.length > 50) {
+    if (lastname === "" || lastname.length > 50 || /\d/.test(lastname)) {
         document.getElementById("lastnameError").textContent =
             "Last name must be alphabetic and not exceed 50 characters.";
+        document.getElementById("lastname").style.border = "2px solid red";
         valid = false;
     }
 
